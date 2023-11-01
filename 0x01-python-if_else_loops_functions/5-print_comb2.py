@@ -4,5 +4,5 @@ for i in range(0, 100):
         print("{}".format(i))
         break
     elif i < 10:
-        i="0" + str(i)
+        i = "0" + str(i)
     print("{}".format(i), end=", ")
