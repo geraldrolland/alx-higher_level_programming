@@ -4,9 +4,9 @@ number = random.randint(-10000, 10000)
 if number == 0:
     print(f"Last digit of {number:d} is {number:d} and is zero")
 else:
-    if number < -9:
+    if number < 0:
         digit = number % -10
-    elif number > 9:
+    elif number > 0:
         digit = number % 10
     if digit > 5:
         print(f"Last digit of {number:d} is {digit:d} and is greater than 5")
