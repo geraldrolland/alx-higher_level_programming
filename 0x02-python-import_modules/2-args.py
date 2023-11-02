@@ -3,7 +3,7 @@ if __name__ == "__main__":
     import sys
 j = 1
 if len(sys.argv) == 1:
-    print("0 arguments.")
+    print("{} arguments.".format(len(sys.argv) - 1))
 else:
     print("{} arguments:".format(len(sys.argv) - 1))
     while j < len(sys.argv):
