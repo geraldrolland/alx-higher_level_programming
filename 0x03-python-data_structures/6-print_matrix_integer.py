@@ -6,8 +6,9 @@ def print_matrix_integer(matrix=[[]]):
     for lst in matrix:
         last_elem = lst[-1]
         for elem in lst:
+            txt = "{}"
             if last_elem == elem:
-                print("{}".format(elem), end="")
+                print(txt.format(elem), end="")
                 break
-            print("{}".format(elem), end=" ")
+            print(txt.format(elem), end=" ")
         print()
