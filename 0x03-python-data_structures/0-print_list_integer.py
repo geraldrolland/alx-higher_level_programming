@@ -3,5 +3,5 @@ def print_list_integer(my_list=[]):
     if my_list == []:
         print()
     for elem in my_list:
-        txt = "{}"
+        txt = "{:d}"
         print(txt.format(elem))
