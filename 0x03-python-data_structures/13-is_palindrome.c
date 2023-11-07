@@ -14,20 +14,16 @@ int is_palindrome(listint_t **head)
 
 	if (*head == NULL || head == NULL)
 		return (1);
-
 	while (ptr != NULL)
 	{
 		values[count] = ptr->n;
 		ptr = ptr->next;
 		count++;
 	}
-
 	for (int i = 0; i < count / 2; i++)
 	{
 		if (values[i] != values[count - i - 1])
 			return (0);
 	}
-
 	return (1);
 }
-
