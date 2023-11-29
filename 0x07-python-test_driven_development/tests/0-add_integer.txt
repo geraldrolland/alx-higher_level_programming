@@ -1,0 +1,181 @@
+============================
+
+How to use 0-add_integer.txt
+
+============================
+
+This module defines addition function `add_integer(a, b=98)`.
+
+
+USAGE
+
+=====
+
+
+``add_integer(...) return the addition of two argument. For numbers,
+that value is equivalent to using the ``+`` operator.
+
+
+::
+
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(1, 2)
+    3
+
+
+::
+
+
+    >>> add_integer(-2, 6)
+    4
+
+::
+
+
+    >>> add_integer(2, -6)
+    -4
+
+
+Note : floating and non-floating point number can be combined
+
+
+::
+
+
+    >>> add_integer(2, 3.5)
+    5
+
+
+::
+
+
+    >>> add_integer(2.9, 4)
+    6
+
+::
+
+
+    >>> add_integer(-4, 2.2)
+    -2
+
+
+::
+
+
+    >>> add_integer(-3.5, 7)
+    4
+
+
+::
+
+
+The function works with floating point values
+
+
+::
+
+
+    >>> add_integer(1.2, 4.5)
+    5
+
+::
+
+
+    >>> add_integer(5.0, 2.0)
+    7
+
+::
+
+
+    >>> add_integer(-3.0, 5.0)
+    2
+
+
+::
+
+
+    >>> add_integer(3.0, -5.0)
+    -2
+
+
+The funtion also works only with the first argument , with the second argument initialized to a default value
+
+
+::
+
+    >>> add_integer(2)
+    100
+
+::
+
+
+Non-Numbers
+
+===========
+
+``add_integer(...) funtion expect that both the argument should either a float or an integer.
+If either argument is non-integer or non-float, a typeError is raise:
+
+
+::
+
+
+    >>> add_integer("hey", 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+
+::
+
+
+    >>> add_integer(2, "hey")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+
+::
+
+
+    >>> add_integer("hey", "hi")
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+
+::
+
+
+    >>> add_integer()
+    Traceback (most recent call last):
+        ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+
+::
+
+
+    >>> add_integer(None)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+
+::
+
+
+    >>> add_integer(float("hey"))
+    Traceback (most recent call last):
+        ...
+    ValueError: could not convert string to float: 'hey'
+
+
+::
+
+
+    >>> add_integer(2, float("hey"))
+    Traceback (most recent call last):
+        ...
+    ValueError: could not convert string to float: 'hey'
