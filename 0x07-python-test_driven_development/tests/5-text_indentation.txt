@@ -62,6 +62,20 @@ USAGE
     onyeka
 
 
+::
+
+
+    >>> text = "Holberton. School? How are you: John"
+    >>> text_indentation(text)
+    Holberton.
+    <BLANKLINE>
+    School?
+    <BLANKLINE>
+    How are you:
+    <BLANKLINE>
+    John
+
+
 ``text_indentation(...) do not allow non string type other wise raise an exception
 
 
