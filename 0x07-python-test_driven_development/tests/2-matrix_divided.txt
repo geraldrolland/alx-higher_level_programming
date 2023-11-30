@@ -161,7 +161,15 @@ otherwise an Exception is raised.
     >>> matrix = [[1, 2, 3], [4, 8, 3]]
     >>> matrix_divided(matrix, "zero")
     Traceback (most recent call last):
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
+    TypeError: div must be a number
+
+::
+
+
+    >>> matrix = [[3, 9], [15, 3]]
+    >>> matrix_divided(matrix, "2")
+    Traceback (most recent call last):
+    TypeError: div must be a number
 
 
 An empty list of lists do not raise an exception

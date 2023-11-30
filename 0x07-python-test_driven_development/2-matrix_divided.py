@@ -1,14 +1,25 @@
 #!/usr/bin/python3
 
 
+"""
+This is the module docstring for 2-matrix_divided.py
+
+This module provide function matrix_divided(...)
+"""
+
+
 def matrix_divided(matrix, div):
-    """Return a new matrix divided by div"""
+    """Return a new matrix divided by div.
+    args:
+        matrix(list): matrix
+        div(int or float): div
+    """
     if matrix == [] or not isinstance(matrix, list) or matrix is None:
         msg = "matrix must be a matrix (list of lists) of integers/floats"
         raise TypeError(msg)
     new_matrix = []
     if not isinstance(div, int) and not isinstance(div, float):
-        msg = "matrix must be a matrix (list of lists) of integers/floats"
+        msg = "div must be a number"
         raise TypeError(msg)
     elif div == 0:
         raise ZeroDivisionError("division by zero")
