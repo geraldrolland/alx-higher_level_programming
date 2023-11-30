@@ -1,8 +1,21 @@
 #!/usr/bin/python3
 
 
+"""
+This is the module level docstring for 100-matrix_mul
+
+This module provide matrix_mul(...) function
+for the multiplication of two matrices
+
+"""
+
+
 def matrix_mul(m_a, m_b):
-    """"Return the product of two given matrix m_a and m_b"""
+    """"Return the product of two given matrix m_a and m_b.
+    args:
+        m_a(list): first matrix
+        m_b(list): second matrix
+    """""
     if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
     elif not isinstance(m_b, list):
