@@ -25,14 +25,14 @@ USAGE
 
 
     >>> say_my_name("Bob")
-    My name is Bob
+    My name is Bob 
 
 
 ::
 
 
     >>> say_my_name("mike", "")
-    My name is mike
+    My name is mike 
 
 
 Note `say_my_name(...)` do not allow argument of non-string type or digit string type,
