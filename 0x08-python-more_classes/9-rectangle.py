@@ -67,6 +67,7 @@ class Rectangle:
 
     def __repr__(self):
         return f"Rectangle({self.__width}, {self.__height})"
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Return the size of the largest rectangle.
@@ -84,7 +85,8 @@ class Rectangle:
             return rect_2
         else:
             return rect_1
+
     @classmethod
     def square(cls, size=0):
-    """Return a new class Square"""
+        """Return a new class Square"""
         return cls(size, size)
