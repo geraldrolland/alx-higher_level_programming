@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 
 """
 This is the module docstring for 8-rectangle
