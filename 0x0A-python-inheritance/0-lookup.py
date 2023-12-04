@@ -11,9 +11,4 @@ def lookup(obj):
     args:
         obj: object of a class
     """
-    my_list = []
-    my_dict = obj.__dict__
-    keys = my_dict.keys()
-    for key in keys:
-        my_list.append(key)
-    return my_list
+    return dir(obj)
