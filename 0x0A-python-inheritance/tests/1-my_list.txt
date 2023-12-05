@@ -61,3 +61,11 @@ USAGE
     >>> my_list1.append(0)
     >>> my_list1.print_sorted()
     [0, 0, 0, 0, 0]
+
+
+::
+
+
+    >>> my_list4 = MyList()
+    >>> my_list4.print_sorted()
+    []
