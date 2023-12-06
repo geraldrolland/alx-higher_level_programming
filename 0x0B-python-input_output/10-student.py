@@ -6,9 +6,6 @@ This module defines the class Student
 """
 
 
-import json
-
-
 class Student:
 
     """Define class student"""
@@ -27,13 +24,10 @@ class Student:
     def to_json(self, attrs=None):
         """Return dictionary"""
         if attrs is None:
-            my_str = json.dumps(self.__dict__)
-            return (json.loads(my_str))
-        my_str = json.dumps(self.__dict__)
-        my_dict = json.loads(my_str)
+            return self.__dict__
         new_dict = {}
-        my_dict_copy = my_dict.copy()
-        key_list = my_dict.keys()
+        my_dict_copy = self.__dict__.copy()
+        key_list = my_dict_copy.keys()
         for key in attrs:
             if key in key_list:
                 value = my_dict_copy[key]
