@@ -12,19 +12,19 @@ def pascal_triangle(n):
         n(int): number of triangles
     """
     if n <= 0:
-        return [[]]
+        return []
     if n == 1:
         return [[1]]
     if n == 2:
-        return [[1], [1,1]]
-    my_list =[[1],[1,1]]
+        return [[1], [1, 1]]
+    my_list = [[1], [1, 1]]
     i = 2
     while i < n:
         sub_list = []
         sub_list.append(1)
         j = 0
         sum = 0
-        while  j + 1 < len(my_list[-1]):
+        while j + 1 < len(my_list[-1]):
             sum += my_list[-1][j] + my_list[-1][j + 1]
             sub_list.append(sum)
             sum = 0
