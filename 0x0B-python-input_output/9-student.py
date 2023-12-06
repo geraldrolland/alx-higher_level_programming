@@ -23,4 +23,5 @@ class Student:
 
     def to_json(self):
         """Return dictionary"""
-        return json.dumps(self.__dict__)
+        my_str = json.dumps(self.__dict__)
+	return json.loads(my_str)
