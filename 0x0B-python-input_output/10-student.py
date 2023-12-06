@@ -10,6 +10,7 @@ import json
 
 
 class Student:
+
     """Define class student"""
 
     def __init__(self, first_name, last_name, age):
