@@ -10,7 +10,9 @@ import json
 
 
 class Student:
+
     """define class Student"""
+
     def __init__(self, first_name, last_name, age):
         """Initialize the attribute of the object.
         args:
