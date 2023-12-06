@@ -10,4 +10,5 @@ import json
 
 def class_to_json(obj):
     """convert class object to jason"""
-    return json.dumps(obj.__dict__)
+    my_str = json.dumps(obj.__dict__)
+    return json.loads(my_str)
