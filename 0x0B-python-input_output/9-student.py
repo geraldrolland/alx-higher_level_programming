@@ -6,9 +6,6 @@ This module defines the class Student
 """
 
 
-import json
-
-
 class Student:
 
     """define class Student"""
@@ -26,5 +23,4 @@ class Student:
 
     def to_json(self):
         """Return dictionary"""
-        my_str = json.dumps(self.__dict__)
-        return json.loads(my_str)
+        return self.__dict__
