@@ -7,7 +7,6 @@ This module defines the class Rectangle
 
 
 class Rectangle(BaseGeometry):
-
     """define a class Rectangle"""
     def __init__(self, width, height):
         """Initialize the attribute of the object
