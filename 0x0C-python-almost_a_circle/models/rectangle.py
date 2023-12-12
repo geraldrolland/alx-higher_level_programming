@@ -113,4 +113,3 @@ class Rectangle(Base):
             "width": self.width
             }
         return my_dict
-
