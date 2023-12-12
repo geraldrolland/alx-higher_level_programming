@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-from models.rectangle import Rectangle
 
 
 """
 This module defines the class Square
 """
+
+
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
@@ -51,4 +53,3 @@ class Square(Rectangle):
     def to_dictionary(self):
         """returns the dictionary representation of a Square"""
         return {"id": self.id, "x": self.x, "size": self.width, "y": self.y}
-
