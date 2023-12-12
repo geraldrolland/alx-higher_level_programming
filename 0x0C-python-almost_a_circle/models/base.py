@@ -135,4 +135,3 @@ class Base:
                     return my_list_obj
             except FileNotFoundError:
                 return []
-
