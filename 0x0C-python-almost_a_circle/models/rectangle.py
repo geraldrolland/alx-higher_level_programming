@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-from models.base import Base
 
 
 """
 This module defines the class Rectangle
 """
+
+
+from models.base import Base
 
 
 class Rectangle(Base):
