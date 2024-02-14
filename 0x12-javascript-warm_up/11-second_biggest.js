@@ -7,13 +7,15 @@ if (listArg[2] === undefined || listArg.length === 3) {
   for (let i = 0; i < myList.length; i++) {
     myList[i] = parseInt(myList[i]);
   }
-  const newList = myList.sort();
-  const size = newList.length;
-  const max = newList[size - 1];
+  const newList = myList.sort((a, b) => a - b);
+  const max = newList[newList.length - 1];
   for (let j = newList.length - 1; j >= 0; j--) {
-    if (newList[j] !== max || j === 0) {
+    if (newList[j] !== max) {
       console.log(newList[j]);
       break;
+    }
+    if (j === 0) {
+      console.log(newList[j]);
     }
   }
 }
