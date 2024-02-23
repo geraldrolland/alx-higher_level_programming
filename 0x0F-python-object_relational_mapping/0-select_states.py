@@ -25,12 +25,12 @@ if __name__ == "__main__":
         cur = conn.cursor()
 
         # Executing the SQL query to fetch states
-        cur.execute("SELECT id, name FROM states ORDER BY id ASC")
+        cur.execute("SELECT * FROM states")
         state_list = cur.fetchall()
 
         # Printing the fetched states
         for state in state_list:
-            print("({} '{}')".format(state[0], state[1]))
+            print(state)
 
         # Closing cursor and connection
         cur.close()
