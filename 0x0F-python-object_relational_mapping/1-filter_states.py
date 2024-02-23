@@ -19,7 +19,7 @@ if __name__ == "__main__":
         }
     conn = MySQLdb.connect(**db_uri)
     cur = conn.cursor()
-    query = " WHERE states.name LIKE 'N%' ORDER BY states.id ASC"
+    query = " WHERE states.name LIKE BINARY 'N%' ORDER BY states.id ASC"
     query = "SELECT * FROM states" + query
     cur.execute(query)
     state_list = cur.fetchall()
