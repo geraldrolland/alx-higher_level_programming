@@ -18,7 +18,7 @@ if __name__ == "__main__":
        }
     conn = MySQLdb.connect(**db_uri)
     cur = conn.cursor()
-    query = "SELECT * FROM states WHERE name = '{}'".format(sys.argv[4])
+    query = "SELECT * FROM states WHERE name LIKE BINARY '{}'".format(sys.argv[4])
     cur.execute(query)
     state_list = cur.fetchall()
     for state in state_list:
