@@ -4,10 +4,10 @@
 This script lists all states from the database hbtn_0e_0_usa
 """
 
-import MySQLdb
-import sys
 
 if __name__ == "__main__":
+    import MySQLdb
+    import sys
     # Checking if the required command-line arguments are provided
     if len(sys.argv) != 4:
         print("Usage: {} <username> <password> <database>".format(sys.argv[0]))
