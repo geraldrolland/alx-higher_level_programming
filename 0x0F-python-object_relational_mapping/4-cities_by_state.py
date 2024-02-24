@@ -18,9 +18,9 @@ if __name__ == "__main__":
         }
     conn = MySQLdb.connect(**db_uri)
     cur = conn.cursor()
-    query = " states.name, cities.name ORDER BY states.id ASC;"
-    query = " states.id=cities.state_id GROUP BY states.id," + query
-    q = "SELECT states.id, cities.name, states.name FROM states JOIN cities ON"
+    query = " cities.name, states.name ORDER BY cities.id ASC;"
+    query = " states.id=cities.state_id GROUP BY cities.id," + query
+    q = "SELECT cities.id, cities.name, states.name FROM states JOIN cities ON"
     query = q + query
     cur.execute(query)
     my_list = cur.fetchall()
