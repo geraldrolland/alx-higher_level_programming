@@ -25,7 +25,9 @@ def find_peak(list_of_integers):
             if i < len(list_of_integers):
                 if peak >= list_of_integers[i] and peak >= list_of_integers[j]:
                     peak_list.append(peak)
-        if len(peak_list) == 1:
+        if peak_list == []:
+            return None
+        else if len(peak_list) == 1:
             return peak_list[0]
         elif len(peak_list) == 2:
             return max(peak_list[0], peak_list[1])
