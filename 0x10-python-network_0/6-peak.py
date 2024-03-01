@@ -27,7 +27,7 @@ def find_peak(list_of_integers):
                     peak_list.append(peak)
         if peak_list == []:
             return None
-        else if len(peak_list) == 1:
+        elif len(peak_list) == 1:
             return peak_list[0]
         elif len(peak_list) == 2:
             return max(peak_list[0], peak_list[1])
