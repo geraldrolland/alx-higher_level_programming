@@ -10,7 +10,7 @@ if __name__ == "__main__":
     import requests
     import sys
     url = sys.argv[1]
-    request_body = {"Email": sys.argv[2]}
+    request_body = {"email": sys.argv[2]}
     response = requests.post(url, data=request_body)
     response_body = response.content.decode("utf-8")
     print(response_body)
