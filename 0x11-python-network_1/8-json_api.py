@@ -8,7 +8,7 @@ http://0.0.0.0:5000/search_user with the letter as a parameter.
 if __name__ == "__main__":
     import requests
     import sys
-    url = sys.argv[1]
+    url = "http://0.0.0.0:5000/search_user"
     request_body = {"q": sys.argv[1]} if len(sys.argv) == 2 else {"q": ""}
     response = requests.post(url, data=request_body)
     try:
