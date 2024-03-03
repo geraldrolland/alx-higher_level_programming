@@ -9,7 +9,7 @@ if __name__ == "__main__":
     import requests
     import sys
     url = sys.argv[1]
-    request_body = {"q": sys.argv[2]} if len(sys.argv) == 2 else {"q": ""}
+    request_body = {"q": sys.argv[1]} if len(sys.argv) == 2 else {"q": ""}
     response = requests.post(url, data=request_body)
     try:
         response_body = response.json()
