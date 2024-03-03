@@ -12,5 +12,8 @@ if __name__ == "__main__":
     password = sys.argv[2]
     url = "https://api.github.com/user"
     response = requests.get(url, auth=(username, password))
-    response_body = response.json()
-    print(response_body["id"])
+    try:
+        response_body = response.json()
+        print(response_body["id"])
+    except KeyError as e:
+        print(None)
