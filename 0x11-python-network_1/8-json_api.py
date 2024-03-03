@@ -17,5 +17,5 @@ if __name__ == "__main__":
             print("[{}] {}".format(response_body["id"], response_body["name"]))
         else:
             print("No result")
-    except TypeError as e:
+    except ValueError as e:
         print("Not a valid JSON")
