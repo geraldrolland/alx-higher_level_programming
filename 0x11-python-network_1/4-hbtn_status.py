@@ -9,5 +9,5 @@ if __name__ == "__main__":
     response = requests.get(url)
     response_body = response.content.decode("utf-8")
     print("Body response:")
-    print("\t -type: {}".format(type(response_body)))
-    print("\t -content: {}".format(response_body))
+    print("\t- type: {}".format(type(response_body)))
+    print("\t- content: {}".format(response_body))
