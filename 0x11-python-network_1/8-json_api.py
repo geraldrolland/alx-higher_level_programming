@@ -12,7 +12,7 @@ if __name__ == "__main__":
     request_body = {"q": sys.argv[1]} if len(sys.argv) == 2 else {"q": ""}
     response = requests.post(url, data=request_body)
     try:
-        response_body = response.json().decode("utf-8")
+        response_body = response.json()
         if response_body:
             print("[{}] {}".format(response_body["id"], response_body["name"]))
         else:
