@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+"""
+This script list all states record in the state table
+"""
+
 if __name__ == "__main__":
     import sys
     import MySQLdb
