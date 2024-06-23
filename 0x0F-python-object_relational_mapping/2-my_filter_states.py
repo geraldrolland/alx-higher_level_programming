@@ -2,7 +2,7 @@
 
 """
 This script the record that matches the fourth
-command line argument 
+command line argument
 """
 
 if __name__ == "__main__":
@@ -19,7 +19,8 @@ if __name__ == "__main__":
     )
     cur = conn.cursor()
     cur.execute(
-        'SELECT id, name FROM states WHERE name="{}"'.format(sys.argv[4])
+        'SELECT id, name FROM states WHERE name="{}" \
+     ORDER BY id'.format(sys.argv[4])
     )
     query_set = cur.fetchall()
     for state in query_set:
