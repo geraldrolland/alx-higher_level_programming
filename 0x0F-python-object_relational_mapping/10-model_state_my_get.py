@@ -16,7 +16,7 @@ if __name__ == "__main__":
     )
     Session = sessionmaker(bind=eng)
     session = Session()
-    state = session.query(State.id).filter(State.name==argv[4]).one_or_none()
+    state = session.query(State.id).filter(State.name == argv[4]).one_or_none()
     if state is not None:
         print(state.id)
     else:
