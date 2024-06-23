@@ -8,7 +8,6 @@ fourth commandline argument and prevent sql injection
 if __name__ == "__main__":
     import MySQLdb
     import sys
-   
     conn = MySQLdb.connect(
         host="localhost",
         port=3306,
