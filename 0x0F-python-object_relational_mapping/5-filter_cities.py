@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 
+"""
+This scripts list city record that matches
+the state name parsed as the fourth commandline
+argument
+"""
+
 if __name__ == "__main__":
     import MySQLdb
     import sys
