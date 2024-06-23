@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+
+"""
+This scripts list all states records
+from the states table
+"""
+
 if __name__ == "__main__":
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
