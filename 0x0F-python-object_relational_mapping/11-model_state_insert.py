@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+
+"""
+This scripts create a state record with the name
+Louisiana
+"""
+
 if __name__ == "__main__":
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
@@ -13,6 +19,6 @@ if __name__ == "__main__":
     state = State(name="Louisiana")
     session.add(state)
     session.commit()
-    state = session.query(State.id).filter(State.name=="Louisiana").one()
+    state = session.query(State.id).filter(State.name == "Louisiana").one()
     print(state.id)
     session.close()
