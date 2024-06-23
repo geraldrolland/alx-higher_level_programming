@@ -1,3 +1,9 @@
+#!/usr/bin/python2
+
+"""
+This scripts create the table City
+"""
+
 from model_state import Base, State
 from sqlalchemy.orm import relationship
 from sqlalchemy import Column, String, Integer, ForeignKey
