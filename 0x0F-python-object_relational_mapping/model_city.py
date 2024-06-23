@@ -4,7 +4,7 @@
 This scripts create the table City
 """
 
-from model_state import Base, State
+from model_state import Base
 from sqlalchemy.orm import relationship
 from sqlalchemy import Column, String, Integer, ForeignKey
 
