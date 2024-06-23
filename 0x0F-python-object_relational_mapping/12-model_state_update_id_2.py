@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+
+"""
+This scripts updates the name of the state record with
+the id 2
+"""
+
 if __name__ == "__main__":
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
