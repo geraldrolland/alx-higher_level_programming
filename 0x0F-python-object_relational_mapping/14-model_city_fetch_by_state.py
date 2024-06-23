@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+
+"""
+this scripts list all city records from the cities
+table with its corresponding state
+"""
+
 if __name__ == "__main__":
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
