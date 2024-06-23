@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+"""
+This scripts list state recorde that matches the
+fourth commandline argument and prevent sql injection
+"""
+
 if __name__ == "__main__":
     import MySQLdb
     import sys
