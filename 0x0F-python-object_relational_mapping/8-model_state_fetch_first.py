@@ -20,4 +20,4 @@ if __name__ == "__main__":
         state = session.query(State).order_by(State.id).first()
         print("{}: {}".format(state.id, state.name))
     except Exception as e:
-        pass
+        print()
