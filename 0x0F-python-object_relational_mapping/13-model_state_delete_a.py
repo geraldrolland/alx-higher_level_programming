@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+
+"""
+This scripts delete states resords that contains
+the letter a
+"""
+
 if __name__ == "__main__":
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
