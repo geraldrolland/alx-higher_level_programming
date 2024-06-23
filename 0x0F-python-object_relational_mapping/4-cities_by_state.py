@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+"""
+This scripts list all cities record that shares
+relationship with states table
+"""
 if __name__ == "__main__":
     import MySQLdb
     import sys
