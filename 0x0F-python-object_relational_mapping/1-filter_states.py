@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+"""
+list all states records that contains letter N
+"""
+
 if __name__ == "__main__":
     import sys
     import MySQLdb
