@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+"""
+This script the record that matches the fourth
+command line argument 
+"""
+
 if __name__ == "__main__":
     import MySQLdb
     import sys
