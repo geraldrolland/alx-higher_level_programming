@@ -8,7 +8,7 @@ table with its corresponding state
 if __name__ == "__main__":
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
-    """from model_city import City"""
+    from model_city import City
     from model_state import State, Base
     from sys import argv
     eng = create_engine(
